@@ -1,0 +1,81 @@
+/* src/styles/Portfolio.css */
+
+.portfolio {
+    position: relative;
+    background-image: url('../assets/background2.jpg'); /* Path to the background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 20px;
+    color: white;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center; /* Center items horizontally */
+    height: 100vh; /* Set full viewport height */
+  }
+  
+  /* Portfolio Text (heading and paragraph) */
+  .portfolio h2 {
+    text-align: left; /* Align heading to the left */
+    font-size: 2rem;
+    margin-bottom: 20px; /* Space below the heading */
+    margin-top: 0; /* Remove default top margin */
+  }
+  
+  .portfolio p {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Use Helvetica Neue as the primary font */
+    font-weight: 400; /* Set font weight to normal for better readability */
+    text-align: left; /* Align paragraph to the left */
+    font-size: 1rem; /* Font size */
+    margin: 0px; /* Add margin for spacing above and below the paragraph */
+    width: 50%; /* Optionally limit the width of the paragraph */
+    color: rgb(0, 0, 0); /* Ensure text color is black */
+  }
+  
+  /* Portfolio Images Layout */
+  .portfolio-images {
+    display: flex; /* Use flexbox to arrange images horizontally */
+    justify-content: center; /* Center images horizontally */
+    gap: 30px; /* Space between the images */
+    width: 100%; /* Ensure the images are spread across the full width */
+    margin-top: 40px; /* Add some space between the paragraph and images */
+  }
+  
+  /* Individual Image Containers */
+  .design-1-container,
+  .design-2-container,
+  .design-3-container {
+    text-align: center; /* Center the image within the container */
+    width: auto; /* Let these containers be as wide as needed */
+    margin: 0; /* Remove margin */
+  }
+  
+  /* Image Styles */
+  .design-1, .design-2, .design-3 {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Apply border radius to images */
+  }
+  
+  .design-2 {
+    max-width: 110%; /* Increase width slightly */
+    border-radius: 15px; /* Different rounded corners for design-2 */
+  }
+  
+  .design-3 {
+    margin-top: 32px; /* Add space at the top */
+  }
+  
+  /* Add additional adjustments for smaller screens */
+  @media screen and (max-width: 768px) {
+    .portfolio-images {
+      flex-direction: column; /* Stack images vertically on smaller screens */
+    }
+  
+    .design-1, .design-2, .design-3 {
+      max-width: 100%;
+      margin-top: 10px;
+    }
+  }
+  

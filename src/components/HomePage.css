@@ -1,0 +1,155 @@
+/* src/components/HomePage.css */
+
+.homepage-container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Full Page Image */
+.background-image {
+  position: relative;
+  background-image: url('../assets/homepage.jpg'); /* Correct path to the image */
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Overlay */
+.overlay {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Button container */
+.button-container {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between; /* Spread buttons across the screen */
+  padding: 0 20px;
+  z-index: 3;
+}
+
+/* General Button Styles */
+/* src/components/HomePage.css */
+
+/* General Button Styles */
+.btn {
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  font-size: 1.2rem;
+  border-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+  text-decoration: none; /* Remove underline from the buttons */
+}
+
+/* Button hover effect */
+.btn:hover {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+
+/* Individual button positioning */
+.btn-about {
+  position: absolute;
+  left: 0;
+}
+
+.btn-portfolio {
+  position: absolute;
+  top: 10px;
+  left: 35%;
+}
+
+.btn-blog {
+  position: absolute;
+  top: 10px;
+  left: 60%;
+}
+
+.btn-contact {
+  position: absolute;
+  right: 0;
+}
+
+/* Styling for each section */
+.section {
+  padding: 50px;
+  text-align: center;
+  height: 100vh;
+}
+
+.about {
+  background-color: #f5f5f5;
+}
+
+.portfolio {
+  background-color: #ddd;
+}
+
+.blog {
+  background-color: #b3c7e6;
+}
+
+.contact {
+  background-color: #f1f1f1;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth; /* Smooth scrolling between sections */
+}
+
+@media screen and (max-width: 768px) {
+  .overlay h1 {
+    font-size: 2rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
+
+  /* Adjust button positions on smaller screens */
+  .button-container {
+    top: 0px;
+    padding: 0 10px;
+  }
+
+  .btn-about {
+    left: 0;
+  }
+
+  .btn-portfolio {
+    left: 35%;
+  }
+
+  .btn-blog {
+    left: 55%;
+  }
+
+  .btn-contact {
+    right: 0;
+  }
+}

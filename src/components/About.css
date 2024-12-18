@@ -1,0 +1,31 @@
+/* src/styles/About.css */
+
+.about {
+    position: relative;
+    background-image: url('../assets/background3.jpg'); /* Set the background image */
+    background-size: cover; /* Make sure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: white; /* Text color to contrast against the background */
+    padding: 100px 20px; /* Padding around the content */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+  }
+  
+  /* Optional: Styling for the text within the About section */
+  .about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    text-align: center; /* Center the paragraph text */
+    max-width: 800px; /* Limit the width of the paragraph */
+    color: black;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Use Helvetica Neue as the primary font */
+  }
+  
